@@ -1,0 +1,14 @@
+manifest:
+  format: 1
+
+application:
+  name: node-simple
+
+instances:
+  - name: web
+    quantity: 1
+    runtime:
+      plugin: paasmaker.runtime.node.nvm
+      parameters:
+        launch_command: "node app.js"
+      version: v0.8
